@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "static-server": "^2.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.16"
   }
 }
