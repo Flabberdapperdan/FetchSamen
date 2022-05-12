@@ -17,7 +17,7 @@ const handleClick = async () => {
       }
     );
     let data = await JSONdata.json();
-    data.docs.forEach((character.) => {
+    data.docs.forEach((character) => {
         console.log(character);
         const newListItemName = document.createElement("li");
         newListItemName.innerHTML = character.name;
