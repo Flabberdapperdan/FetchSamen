@@ -18,15 +18,21 @@ h1 {
   padding: 0;
 }
 
-button,
+button, input,
 select {
-  width: 150px;
+  width: 200px;
   height: 40px;
   margin: 10px 0;
   border-radius: 20px;
 
   color: beige;
   font-size: 20px;
+  text-align: center;
 
   background-color: seagreen;
+}
+
+input {
+  background-color: white;
+  color: black;
 }
