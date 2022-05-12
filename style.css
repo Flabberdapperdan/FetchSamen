@@ -5,6 +5,10 @@ body {
 
 h1 {
   text-align: center;
+  font-family: Macondo;
+  font-size: 60px;
+  color: goldenrod;
+  opacity: 0.9;
 }
 
 #main-container {
@@ -18,18 +22,29 @@ h1 {
   padding: 0;
 }
 
-button, input,
-select {
+#type-select-div {
+  display: flex;
+  justify-content: center;
+}
+
+button, 
+input,
+select,
+#display-number {
   width: 200px;
   height: 40px;
   margin: 10px 0;
   border-radius: 20px;
-
+  
   color: beige;
   font-size: 20px;
   text-align: center;
-
+  
   background-color: seagreen;
+}
+
+#display-number {
+  margin: 10px 10px;
 }
 
 input {
