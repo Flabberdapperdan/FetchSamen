@@ -26,7 +26,12 @@ const handleClick = async () => {
         const newListItemRace = document.createElement("li");
         newListItemRace.innerHTML = character.race;
         ulItem.appendChild(newListItemRace);
+        const newListItemUrl = document.createElement("li");
+        
+        newListItemUrl.innerHTML = character.wikiUrl;
+        ulItem.appendChild(newListItemUrl);
     }
+    
     );
   };
   
