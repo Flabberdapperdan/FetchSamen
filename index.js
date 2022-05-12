@@ -1,26 +1,24 @@
-const handleClick = () => {
+const handleClick = async () => {
   const ulItem = document.getElementById("info-list");
   ulItem.innerHTML = "";
 
   let select = document.getElementById("dropdown");
   let value = select.options[select.selectedIndex].value;
 
-  fetch(`https://the-one-api.dev/v2/${value}`, {
+  let JSONdata = await fetch(
+    `https://the-one-api.dev/v2/${value}`,
+    {
     headers: {
-      Authorization: "Bearer " + "F3Y4z5i4JLiNiRv2zfYI", // <-- moest nog een spatie na Bearer
+      Authorization: "Bearer " + "F3Y4z5i4JLiNiRv2zfYI",
     },
-  }).then((JSONdata) => {
-    JSONdata.json().then((data) => {
-      console.log(data.docs);
-
-      data.docs.forEach((book) => {
-        const newListItem = document.createElement("li");
-        // newListItem.innerText(book); waarom werk dit niet?
-
-        newListItem.innerHTML = book.name;
-        ulItem.appendChild(newListItem);
-      });
-    });
+    mode: 'cors'
+    }
+  );
+  let data = await JSONdata.json();
+  data.docs.forEach((book) => {
+    const newListItem = document.createElement("li");
+    newListItem.innerHTML = book.name;
+    ulItem.appendChild(newListItem);
   });
 };
 
