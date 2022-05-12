@@ -17,7 +17,10 @@ const handleClick = async () => {
 
   let data = await JSONdata.json();
   if (data.docs.length === 0) {
+    const newListItemNothing = document.createElement("li");
     console.log("Character does not exist")
+    newListItemNothing.innerHTML = "Character does not exist";
+    ulItem.appendChild(newListItemNothing);
   } else {
     data.docs.forEach((character) => {
       console.log(character);
