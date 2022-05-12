@@ -1,7 +1,6 @@
 const handleClick = async () => {
   const ulItem = document.getElementById("info-list");
-  ulItem.innerHTML = "";
-
+  ulItem.innerHTML = ""; //reset for new fetch;
   let select = document.getElementById("dropdown");
   let value = select.options[select.selectedIndex].value;
 
