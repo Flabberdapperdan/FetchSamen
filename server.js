@@ -16,5 +16,5 @@ var server = new StaticServer({
 });
  
 server.start(function () {
-  console.log('Server listening on: ', PORT);
+  console.log('Server hosting on: ', PORT);
 });
