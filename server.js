@@ -1,5 +1,5 @@
 var StaticServer = require('static-server');
-var PORT = 3000;
+var PORT = 8000;
 var server = new StaticServer({
   rootPath: '.',            // required, the root of the server file tree
   port: PORT,
