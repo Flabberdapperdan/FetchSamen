@@ -1,7 +1,6 @@
-fetch(`https://the-one-api.dev/v2/${value}`);
 
 const handleClick = () => {
-    console.log("Hallo");
+    console.log("Hallo"); 
     // const ulItem = document.getElementById("info-list");
     // ulItem.innerHTML = "";
   
